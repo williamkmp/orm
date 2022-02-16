@@ -1,0 +1,31 @@
+{
+  "name": "william-orm",
+  "version": "1.0.0",
+  "description": "javascript MySQL orm using mysql2 package",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamkmp/orm.git"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "orm",
+    "mysql"
+  ],
+  "author": "William Kurnia Mulyadi Putra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/williamkmp/orm/issues"
+  },
+  "homepage": "https://github.com/williamkmp/orm#readme",
+  "dependencies": {
+    "mysql2": "^2.3.3"
+  }
+}
