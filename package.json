@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "javascript MySQL orm using mysql2 package",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "lib": "lib"
   },
@@ -27,5 +28,8 @@
   "homepage": "https://github.com/williamkmp/orm#readme",
   "dependencies": {
     "mysql2": "^2.3.3"
+  },
+  "bin": {
+    "orm" : "bin/index.js"
   }
 }

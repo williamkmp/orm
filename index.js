@@ -1,8 +1,20 @@
-#!/usr/bin/node
+import getConnection from "./lib/connection.js";
+import migrate from "./lib/migrate.js"
+import {column, schema} from "./lib/schema.js"
 
-import fs from "fs";
+export default async function database({host, database, user, password, schema}){
+	let SCHEMA = schema || null;
+	let connection = await getConnection({ host, database, user, password });
+    
+	if(schema !== null && connection !== undefined){
+		await migrate(connection, SCHEMA);
+		connection.end();
+	}
+}
 
-fs.writeFile(`${__dirname}/schema/`, "Learn Node FS module", function (err) {
-	if (err) throw err;
-	console.log("File is created successfully.");
-});
+export const col = column;
+
+export const table = schema;
+
+
+
