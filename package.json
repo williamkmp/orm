@@ -1,12 +1,14 @@
 {
-  "name": "william-orm",
+  "name": "w-orm",
   "version": "1.0.0",
   "description": "javascript MySQL orm using mysql2 package",
   "main": "index.js",
   "type": "module",
   "directories": {
-    "lib": "lib"
+    "lib": "lib",
+    "bin": "bin"
   },
+  "bin": "./bin/execute.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,9 +29,7 @@
   },
   "homepage": "https://github.com/williamkmp/orm#readme",
   "dependencies": {
+    "commander": "^9.0.0",
     "mysql2": "^2.3.3"
-  },
-  "bin": {
-    "orm" : "bin/index.js"
   }
 }
