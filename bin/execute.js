@@ -57,14 +57,14 @@ export function normSay(strings){
 		if(strings.length === 0) return; 
 		strings.forEach((message) => {
 			if(isfirst){
-				console.log("\n\t[NORM] : " + message);
+				console.log("\t[WORM] : " + message);
 				isfirst = false;
 			}else{
 				console.log(`\t         ` + message);
 			}
 		});
 	}else{
-		console.log("\n\t[NORM] : " + strings);
+		console.log("\n\t[WORM] : " + strings);
 	}
 	console.log("");
 }
