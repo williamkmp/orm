@@ -1,6 +1,6 @@
 {
-  "name": "w-orm",
-  "version": "1.0.0",
+  "name": "@williamkmp/w-orm",
+  "version": "1.0.1np",
   "description": "javascript MySQL orm using mysql2 package",
   "main": "index.js",
   "type": "module",
