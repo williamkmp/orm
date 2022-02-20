@@ -1,6 +1,6 @@
 {
-  "name": "@williamkmp/w-orm",
-  "version": "1.0.2",
+  "name": "epek",
+  "version": "1.0.0",
   "description": "javascript MySQL orm using mysql2 package",
   "main": "index.js",
   "type": "module",
@@ -8,9 +8,7 @@
     "lib": "lib",
     "bin": "bin"
   },
-  "bin": {
-    "worm": "./bin/execute.js"
-  },
+  "bin": "./client/execute.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

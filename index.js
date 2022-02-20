@@ -1,3 +1,3 @@
-import { column } from "./lib/schema.js";
+import { createColumn } from "./lib/column/column.js";
 
-export const col = column;
+export const col = createColumn;

@@ -17,7 +17,7 @@ program
 		let messages = [];
 		if (!existsSync("schema")) {
 			mkdirSync("schema");
-			messages.push("Thank you for using NORM - Not an ORM \\(^ - ^)/");
+			messages.push("Thank you for using EPEK - ORM \\(^ - ^)/");
 		}
 		writeFileSync(
 			"schema/schema.js",
@@ -57,14 +57,14 @@ export function normSay(strings){
 		if(strings.length === 0) return; 
 		strings.forEach((message) => {
 			if(isfirst){
-				console.log("\t[WORM] : " + message);
+				console.log("\n\t[EPEK] : " + message);
 				isfirst = false;
 			}else{
 				console.log(`\t         ` + message);
 			}
 		});
 	}else{
-		console.log("\n\t[WORM] : " + strings);
+		console.log("\n\t[EPEK] : " + strings);
 	}
 	console.log("");
 }
