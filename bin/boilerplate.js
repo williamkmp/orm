@@ -5,7 +5,7 @@ export const DATABASE_CONFIG = {
     host : "localhost",
     database : "database_name",
     user : "root",
-    passowrd : "password"
+    password : "password"
 }
 
 //sample table delete or replace this with your schema
@@ -21,3 +21,4 @@ export const table_name_2 = [
 	col("col_name_3").dateTime()
 ];
 `;
+
