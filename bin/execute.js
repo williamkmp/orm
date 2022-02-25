@@ -4,7 +4,8 @@ import { schema_boilerplate } from "./boilerplate.js"
 import { program } from "commander";
 import { join } from "path" ;
 import migrate, { parseClientSchema } from "../lib/migrate.js"
-import { generateClient } from "../lib/generate_client.js"
+import { generateClient } from "../lib/client_generator/generate_client.js"
+import {normSay} from "../lib/util/util.js"
 
 program
 	.name('EPEK')
@@ -73,22 +74,3 @@ program
 	});
 
 program.parse(process.argv);
-
-
-export function normSay(strings){
-	let isfirst = true;
-	if(Array.isArray(strings)){
-		if(strings.length === 0) return; 
-		strings.forEach((message) => {
-			if(isfirst){
-				console.log("\n\t[EPEK] : " + message);
-				isfirst = false;
-			}else{
-				console.log(`\t         ` + message);
-			}
-		});
-	}else{
-		console.log("\n\t[EPEK] : " + strings);
-	}
-	console.log("");
-}

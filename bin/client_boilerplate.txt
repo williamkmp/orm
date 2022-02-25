@@ -14,5 +14,5 @@ async function _connection() {
 }
 
 export let ORM = {
-	message: "Hi from epek",
+    message : "Hi from epek"
 };
