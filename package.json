@@ -1,6 +1,6 @@
 {
   "name": "epek",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "javascript MySQL orm using mysql2 package",
   "main": "index.js",
   "type": "module",
@@ -30,6 +30,7 @@
   "homepage": "https://github.com/williamkmp/orm#readme",
   "dependencies": {
     "commander": "^9.0.0",
-    "mysql2": "^2.3.3"
+    "mysql2": "^2.3.3",
+    "prettier": "^2.5.1"
   }
 }
