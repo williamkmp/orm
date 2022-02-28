@@ -1,6 +1,6 @@
 # **EPEK**
 
-EPEK is an open source Object Relational Mapper for MySQL database using [mysql2](https://github.com/sidorares/node-mysql2) npm package. <b>epek only supports module type NodeJS</b>. This project is developed to help the owner(me) to learn about MySQL, NodeJS, npm, JavaScript and GitHub.
+EPEK is an open source Object Relational Mapper for MySQL database using [mysql2](https://github.com/sidorares/node-mysql2) npm package. <b>epek only supports module type NodeJS</b>. This project is developed to help the owner(me) to learn about MySQL, NodeJS, npm, JavaScript and GitHub inspired by [prismajs](https://www.prisma.io/).
 
 ## Table of contents
 
